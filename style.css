@@ -4,7 +4,7 @@ html, body {
 
 h1 {
   font-size: 26px;
-  background: #00bcd4;
+  background: #127b48;
   color: white;
   padding: 40px 0 100px 20%;
   margin-bottom: 50px;
@@ -15,8 +15,7 @@ label, p, a, h1, div {
 }
 
 .tab-wrap {
-  width: 50%;
-  margin-left: 20%;
+  width: 100%;
   position: relative;
   display: flex;
   top: -106px;
@@ -51,7 +50,7 @@ input[type=radio][name=tabs]:first-of-type:checked ~ .slide {
 label {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  background-color: #00bcd4;
+  background-color: #000000;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -63,7 +62,7 @@ label {
 }
 
 .slide {
-  background: #ffeb3b;
+  background: #ec0c0c;
   width: calc(100% / 4);
   height: 4px;
   position: absolute;
@@ -89,8 +88,8 @@ label {
   }
 
   .tab-wrap {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0%;
     top: -106px;
   }
 }
@@ -98,7 +97,7 @@ label {
   width: 42px;
   height: 42px;
   border-radius: 50px;
-  background: #03A9F4;
+  background: #0d1606;
   display: block;
   margin: 300px auto 0;
   white-space: nowrap;
