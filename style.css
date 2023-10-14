@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
   background: #127b48;
   color: white;
   padding: 40px 0 100px 5%;
@@ -80,10 +80,10 @@ label {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100px;
+  height: 150px;
   transition: color 0.2s ease;
   width: 100%;
-  font-size: 40px;
+  font-size: 70px;
 }
 
 .slide {
@@ -102,7 +102,7 @@ label {
 
 .tab-label-content .tab-content {
   position: absolute;
-  top: 100px;
+  top: 170px;
   left: 0px;
   margin: 10px;
   line-height: 130%;
