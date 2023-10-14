@@ -4,10 +4,10 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   background: #127b48;
   color: white;
-  padding: 40px 0 100px 20%;
+  padding: 40px 0 100px 5%;
   margin-bottom: 50px;
 }
 
@@ -83,7 +83,7 @@ label {
   height: 75px;
   transition: color 0.2s ease;
   width: 100%;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .slide {
@@ -111,7 +111,7 @@ label {
 
 @media screen and (max-width: 800px) {
   h1 {
-    padding: 40px 0 90px 10%;
+    padding: 40px 0 90px 5%;
   }
 
   .tab-wrap {
