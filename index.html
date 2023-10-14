@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .tab-content {
+            padding: 20px;
+        }
+
+        #home {
+            display: block;
+        }
+
+        #page1, #page2, #page3 {
+            display: none;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media screen and (max-width: 600px) {
+            nav ul {
+                text-align: center;
+            }
+
+            nav li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .tab-content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile First Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('page1')">Page 1</a></li>
+            <li><a href="#" onclick="showTab('page2')">Page 2</a></li>
+            <li><a href="#" onclick="showTab('page3')">Page 3</a></li>
+        </ul>
+    </nav>
+    <div class="tab-content" id="home">
+        <h2>Home</h2>
+        <p>This is the homepage with some content.</p>
+    </div>
+    <div class="tab-content" id="page1">
+        <h2>Page 1</h2>
+        <p>This is Page 1 with a long text. This text can go on and on, and it will be scrollable on smaller screens.</p>
+    </div>
+    <div class="tab-content" id="page2">
+        <h2>Page 2</h2>
+        <p>This is Page 2 with a long text. This text can go on and on, and it will be scrollable on smaller screens.</p>
+    </div>
+    <div class="tab-content" id="page3">
+        <h2>Page 3</h2>
+        <p>This is Page 3 with a long text. This text can go on and on, and it will be scrollable on smaller screens.</p>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(function (tab) {
+                tab.style.display = 'none';
+            });
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
