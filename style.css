@@ -89,10 +89,10 @@ label {
 .slide {
   background: #ec0c0c;
   width: calc(100% / 3);
-  height: 4px;
+  height: 20px;
   position: absolute;
   left: 0;
-  top: calc(100% - 4px);
+  top: calc(100% - 20px);
   transition: left 0.3s ease-out;
 }
 
