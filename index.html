@@ -7,7 +7,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
         }
 
         header {
@@ -18,7 +18,9 @@
         }
 
         nav {
-            background-color: #333;
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
         }
 
         nav ul {
@@ -29,6 +31,16 @@
         nav li {
             display: inline;
             margin-right: 10px;
+        }
+
+        .tab-button {
+            display: inline-block;
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         .tab-content {
@@ -54,6 +66,11 @@
                 margin: 5px 0;
             }
 
+            .tab-button {
+                display: block;
+                margin: 5px auto;
+            }
+
             .tab-content {
                 padding: 10px;
             }
@@ -66,10 +83,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#" onclick="showTab('home')">Home</a></li>
-            <li><a href="#" onclick="showTab('page1')">Page 1</a></li>
-            <li><a href="#" onclick="showTab('page2')">Page 2</a></li>
-            <li><a href="#" onclick="showTab('page3')">Page 3</a></li>
+            <li><button class="tab-button" onclick="showTab('home')">Home</button></li>
+            <li><button class="tab-button" onclick="showTab('page1')">Page 1</button></li>
+            <li><button class="tab-button" onclick="showTab('page2')">Page 2</button></li>
+            <li><button class="tab-button" onclick="showTab('page3')">Page 3</button></li>
         </ul>
     </nav>
     <div class="tab-content" id="home">
