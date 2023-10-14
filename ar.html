@@ -16,20 +16,20 @@
         <a href="index.html" class="locale-link">EN</a>
         <a href="ar.html" class="locale-link active">AR</a>
         <a href="nl.html" class="locale-link">NL</a>
-    </nav>
-    <script>
-      // JavaScript code to set the active style
-      const localeLinks = document.querySelectorAll('.locale-link');
+      </nav>
+      <script>
+        // JavaScript code to set the active style
+        const localeLinks = document.querySelectorAll(".locale-link");
 
-      localeLinks.forEach(link => {
-          link.addEventListener('click', function() {
-              // Remove 'active' class from all links
-              localeLinks.forEach(l => l.classList.remove('active'));
-              // Add 'active' class to the clicked link
-              link.classList.add('active');
+        localeLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            // Remove 'active' class from all links
+            localeLinks.forEach((l) => l.classList.remove("active"));
+            // Add 'active' class to the clicked link
+            link.classList.add("active");
           });
-      });
-  </script>
+        });
+      </script>
     </header>
     <!-- partial:index.partial.html -->
     <div class="tab-wrap">
@@ -37,6 +37,9 @@
       <div class="tab-label-content" id="tab1-content">
         <label for="tab1">Info</label>
         <div class="tab-content">
+          <img src="img.jpeg" />
+          <br />
+          <br />
           <p class="c5">
             <span class="c2 c1"
               >In case of arrest, there is an arrestee support Group (AG) that
@@ -264,8 +267,7 @@
       localeSelector.addEventListener("change", function () {
         const selectedLocale = localeSelector.value;
         window.location.href = selectedLocale + ".html";
-        const activeLink = document.getElementById('active');
-      
+        const activeLink = document.getElementById("active");
       });
     </script>
   </body>
