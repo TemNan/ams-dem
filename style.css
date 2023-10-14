@@ -2,6 +2,10 @@ html,
 body {
   width: 100%;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 h1 {
   font-size: 80px;
@@ -11,6 +15,41 @@ h1 {
   margin-bottom: 50px;
 }
 
+/* Style the header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the navigation links */
+header nav {
+  display: flex;
+  font-size: 40px;
+}
+
+/* Style the navigation links (anchors) */
+header nav a {
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px; /* Adjust the margin as needed */
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+
+.locale-link.active {
+  background-color: #ff0000;
+}
+
+
+
+
 label,
 p,
 a,
@@ -18,6 +57,29 @@ h1,
 div {
   font-family: Roboto, sans-serif;
 }
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  font-size: 80px;
+  background: #127b48;
+  color: white;
+  margin-bottom: 50px;
+  
+}
+
+h1 {
+  margin: 0;
+}
+
+#locale-switcher {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
 
 ul {
   list-style: disc;
@@ -83,7 +145,7 @@ label {
   height: 150px;
   transition: color 0.2s ease;
   width: 100%;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .slide {
