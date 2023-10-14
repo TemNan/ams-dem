@@ -102,9 +102,7 @@ label {
 
 .tab-label-content .tab-content {
   position: absolute;
-  top: 170px;
-  left: 0px;
-  margin: 10px;
+  margin: 40px;
   line-height: 130%;
   display: none;
 }
