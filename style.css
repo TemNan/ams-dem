@@ -1238,6 +1238,7 @@ li.li-bullet-1:before {
   display: inline-block;
   min-width: 9pt;
 }
+
 .lst-kix_list_10-3 > li:before {
   content: "" counter(lst-ctn-kix_list_10-3, decimal) ". ";
 }
@@ -1614,11 +1615,13 @@ ol.lst-kix_list_11-3.start {
   content: "" counter(lst-ctn-kix_list_1-6, decimal) ". ";
 }
 li.li-bullet-0:before {
-  margin-left: -18pt;
+  margin-left: -12pt;
   white-space: nowrap;
   display: inline-block;
-  min-width: 18pt;
+  min-width: 40pt;
+  line-height: 70px ;
 }
+
 .lst-kix_list_12-6 > li:before {
   content: "" counter(lst-ctn-kix_list_12-6, decimal) ". ";
 }
@@ -1691,7 +1694,7 @@ table th {
   line-height: 1;
   orphans: 2;
   widows: 2;
-  text-align: left;
+  
 }
 .c9 {
   color: #000000;
